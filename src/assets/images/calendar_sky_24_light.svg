@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar_fff_24">
+<g id="Vector">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 5.5C5 5.22386 5.22386 5 5.5 5H18.5C18.7761 5 19 5.22386 19 5.5V18.5C19 18.7761 18.7761 19 18.5 19H5.5C5.22386 19 5 18.7761 5 18.5V5.5ZM6 6V18H18V6H6Z" fill="#0068E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 7V4H15V7H14Z" fill="#0068E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 7V4H10V7H9Z" fill="#0068E6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 10H5V9H19V10Z" fill="#0068E6"/>
+</g>
+</g>
+</svg>
