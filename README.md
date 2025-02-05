@@ -2,7 +2,7 @@
 
 ![이미지](seong-cover1.png)
 
-+ 성남 ITS 리액트 퍼블리싱입니다. (tsx, scss)
++ 성남 ITS 리액트 환경 타입스크립트 퍼블리싱입니다. (tsx, scss)
 
 ```
 - git clone https://github.com/termisam005/sgnam-react-typescript-publishiing.git
