@@ -1,0 +1,18 @@
+<svg id="air_quality_very_bad" data-name="air quality_very bad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.526" cy="0.303" r="0.606" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8585"/>
+      <stop offset="0.445" stop-color="#e62222"/>
+      <stop offset="1" stop-color="#730000"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <path id="패스_91520" data-name="패스 91520" d="M11.037,21.986a.75.75,0,0,1-.207-1.039c.083-.125,2.076-3.06,5.17-3.06s5.087,2.935,5.17,3.06a.75.75,0,0,1-1.247.834c-.016-.024-1.64-2.394-3.923-2.394s-3.908,2.37-3.923,2.394a.749.749,0,0,1-.624.331.735.735,0,0,1-.416-.126m-.492-8.259c0-.753.407-1.363.909-1.363s.909.61.909,1.363-.407,1.364-.909,1.364-.909-.61-.909-1.364m9.091,0c0-.753.407-1.363.909-1.363s.909.61.909,1.363-.407,1.364-.909,1.364-.909-.61-.909-1.364M6,16A10,10,0,1,0,16,6,10,10,0,0,0,6,16" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#radial-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_175406" data-name="그룹 175406">
+    <g id="그룹_175405" data-name="그룹 175405" clip-path="url(#clip-path)">
+      <rect id="사각형_40036" data-name="사각형 40036" width="27.45" height="27.45" transform="matrix(0.516, -0.857, 0.857, 0.516, -2.838, 20.678)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+  <rect id="사각형_40039" data-name="사각형 40039" width="32" height="32" fill="none"/>
+</svg>

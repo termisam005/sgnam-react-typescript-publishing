@@ -1,0 +1,91 @@
+<svg id="sunny_day__32px" data-name="sunny day _32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="패스_88393" data-name="패스 88393" d="M9.948,17.936a8,8,0,1,0,8-8,8,8,0,0,0-8,8" transform="translate(-9.948 -9.936)" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.481" cy="0.516" r="0.492" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff4d5"/>
+      <stop offset="0.507" stop-color="#ffc611"/>
+      <stop offset="1" stop-color="#ffba0a"/>
+    </radialGradient>
+    <clipPath id="clip-path-2">
+      <path id="패스_88394" data-name="패스 88394" d="M18.948,6.782V7.64a.857.857,0,0,0,1.714,0V6.782a.857.857,0,0,0-1.714,0" transform="translate(-18.948 -5.926)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffbe0c"/>
+      <stop offset="0.5" stop-color="#ffc612"/>
+      <stop offset="1" stop-color="#ffe596"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <path id="패스_88394-2" data-name="패스 88394" d="M0,.856v.858a.857.857,0,0,0,1.714,0V.856A.857.857,0,0,0,0,.856" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="패스_88394-5" data-name="패스 88394" d="M0,.856v.857a.856.856,0,1,0,1.712,0V.856A.856.856,0,0,0,0,.856" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <path id="패스_88394-6" data-name="패스 88394" d="M0,.852v.853a.853.853,0,0,0,1.707,0V.852A.853.853,0,0,0,0,.852" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path id="패스_88394-7" data-name="패스 88394" d="M0,.856v.857a.852.852,0,1,0,1.7,0V.855a.852.852,0,1,0-1.7,0" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <path id="패스_88394-8" data-name="패스 88394" d="M0,.852v.853a.854.854,0,0,0,1.709,0V.851A.854.854,0,0,0,0,.852" transform="translate(0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_168727" data-name="그룹 168727" transform="translate(-1.939 -1.921)">
+    <g id="그룹_168710" data-name="그룹 168710" transform="translate(9.939 9.92)">
+      <g id="그룹_168709" data-name="그룹 168709" clip-path="url(#clip-path)">
+        <path id="패스_88601" data-name="패스 88601" d="M.008.008,30.165,0l-.008,30.157L0,30.165Z" transform="matrix(0.645, -0.764, 0.764, 0.645, -16.108, 4.661)" fill="url(#radial-gradient)"/>
+      </g>
+    </g>
+    <g id="그룹_168733" data-name="그룹 168733" transform="translate(17.096 5.926)">
+      <g id="그룹_168712" data-name="그룹 168712">
+        <g id="그룹_168711" data-name="그룹 168711" clip-path="url(#clip-path-2)">
+          <rect id="사각형_37707" data-name="사각형 37707" width="2" height="3" transform="translate(-0.148 -0.005)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="그룹_168732" data-name="그룹 168732" transform="translate(1.714 24) rotate(180)">
+        <g id="그룹_168711-2" data-name="그룹 168711" clip-path="url(#clip-path-3)">
+          <rect id="사각형_37707-2" data-name="사각형 37707" width="2" height="3" transform="translate(-0.138 -0.004)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_168734" data-name="그룹 168734" transform="translate(29.951 17.069) rotate(90)">
+      <g id="그룹_168712-2" data-name="그룹 168712" transform="translate(0 0.006)">
+        <g id="그룹_168711-3" data-name="그룹 168711" clip-path="url(#clip-path-3)">
+          <rect id="사각형_37707-3" data-name="사각형 37707" width="2" height="3" transform="translate(-0.143 0)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="그룹_168732-2" data-name="그룹 168732" transform="translate(1.714 23.998) rotate(180)">
+        <g id="그룹_168711-4" data-name="그룹 168711" clip-path="url(#clip-path-3)">
+          <rect id="사각형_37707-4" data-name="사각형 37707" width="2" height="3" transform="translate(-0.142 -0.01)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_168735" data-name="그룹 168735" transform="translate(27.023 25.805) rotate(135)">
+      <g id="그룹_168712-3" data-name="그룹 168712" transform="translate(0.009 0.009)">
+        <g id="그룹_168711-5" data-name="그룹 168711" transform="translate(0.004 0)" clip-path="url(#clip-path-6)">
+          <rect id="사각형_37707-5" data-name="사각형 37707" width="1.713" height="2.569" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="그룹_168732-3" data-name="그룹 168732" transform="translate(1.722 24.003) rotate(180)">
+        <g id="그룹_168711-6" data-name="그룹 168711" transform="translate(0.005 0)" clip-path="url(#clip-path-7)">
+          <rect id="사각형_37707-6" data-name="사각형 37707" width="1.707" height="2.558" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+    <g id="그룹_168736" data-name="그룹 168736" transform="translate(25.837 8.86) rotate(45)">
+      <g id="그룹_168712-4" data-name="그룹 168712" transform="translate(0.013 0.009)">
+        <g id="그룹_168711-7" data-name="그룹 168711" transform="translate(0 0)" clip-path="url(#clip-path-8)">
+          <rect id="사각형_37707-7" data-name="사각형 37707" width="1.703" height="2.569" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="그룹_168732-4" data-name="그룹 168732" transform="translate(1.716 23.994) rotate(180)">
+        <g id="그룹_168711-8" data-name="그룹 168711" transform="translate(-0.001 0)" clip-path="url(#clip-path-9)">
+          <rect id="사각형_37707-8" data-name="사각형 37707" width="1.708" height="2.557" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <rect id="사각형_37715" data-name="사각형 37715" width="32" height="32" fill="none"/>
+</svg>
