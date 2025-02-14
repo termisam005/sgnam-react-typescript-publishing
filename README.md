@@ -5,7 +5,7 @@
 + 성남 ITS 리액트 환경 타입스크립트 퍼블리싱입니다. (tsx, scss)
 
 ```
-- git clone http://git.uinetworks.kr/design/SeongNamITS-type-publishing.git
+- git clone https://github.com/termisam005/sgnam-react-typescript-publishing.git
 - npm install
 - npm start
 ```
