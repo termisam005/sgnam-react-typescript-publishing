@@ -1,0 +1,872 @@
+@import "mixin.scss";
+
+:root {
+    --bg_01: #0A0F24;
+    --bg_02: #04091A;
+    --bg_02_template: #050A1F;
+    --bg_01_40: rgba(10, 11, 20, 0.40);
+    --bg_01_80: rgba(11, 17, 41, 0.8);
+    --bg_02_60: rgba(4, 9, 26, 0.60);
+    --bg-01-80-bar: rgba(10, 15, 36, 0.8);
+    --primary-pri_100: #{$ui_sky};
+    --primary-pri_80: #{$ui_sky80};
+    --primary-pri_60: #{$ui_sky60};
+    --primary-pri_50: #{$ui_sky50};
+    --primary-pri_40: #{$ui_sky40};
+    --primary-pri_30: #{$ui_sky30};
+    --primary-pri_20: #{$ui_sky20};
+    --primary-pri_12: #{$ui_sky12};
+    --primary-pri_12-to-bk: #{$ui_sky12};
+    --primary-pri_06: #{$ui_sky06};
+    --primary-pri_00: #{$ui_sky00};
+    --white-w_100: #{$fc_white};
+    --white-w_100-sec: #{$fc_white};
+    --white-w_87: #{$bg_grey87};
+    --white-w_87-sec: #{$bg_grey87};
+    --white-w_60: #{$bg_grey60};
+    --white-bk_50: #{$bg_black50};
+    --white-w_40: #{$bg_grey40};
+    --white-w_40-sec: #{$bg_grey40};
+    --white-w_30: #{$bg_grey30};
+    --white-w_30-sec: #{$bg_grey30};
+    --white-w_20: #{$bg_grey20};
+    --white-w_16: #{$bg_grey16};
+    --white-w_12: #{$bg_grey12};
+    --white-w_00: #{$bg_black00};
+    --tab-btn_default: #{$ui_blue};
+    --btn-btn_default: #{$ui_blue};
+    --btn-btn_hover: #{$ui_blue_hover};
+    --btn-btn_selected: #{$ui_blue_more};
+    --more-visible-wh_16-to-6: #{$bg_grey16};
+    --more-visible-wh_12-to-6: #{$bg_grey12};
+    --more-visible-wh_6-to-100: #{$bg_grey06};
+    --more-visible-wh_60-to-100: #{$bg_grey60};
+    --more-visible-wh_6-to-60: #{$bg_grey06};
+    --more-visible-wh_6-to-bk: #{$bg_grey06};
+    --primary-to-grayscale-to-bk: #{$ui_sky};
+    --primary-to-grayscale-to-wh: #{$ui_sky};
+    --more-bright-wh_12-to-6: #{$bg_grey12};
+    --more-bright-wh_20-to-12: #{$bg_grey20};
+    --more-bright-wh_6-to-60: #{$bg_grey06};
+    --etc-popup_tit: #{$ui_sky60};
+    --white-w_6: #{$bg_grey06};
+    --background-blur-0120: rgba(162, 164, 184, 0.20);
+    --blur_02_60:rgba(55, 61, 82, 0.60);
+    --bg-blur_02_60:  rgba(55, 61, 82, 0.60);
+    --grade-chart-gco-01:#{$fc_yellow};
+    --line-pri_20-to-wh-100: #{$ui_sky20};
+    --line-wh_12-to-40: #{$bg_grey12};
+    --line-wh_12-to-100: #{$bg_grey12};
+    --line-pri_40-to-bk_40: #{$ui_sky40};
+    --line-pri_40-to-wh_40:#{$ui_sky40};
+    --line-pri_40-to-wh_100:#{$ui_sky40};
+    --icon-pri_20-to-100: rgba(34, 212, 255, 0.30);
+    --line-wh_30-to-6:#{$bg_grey30};
+    --line-wh_20-to-100: rgba(255, 255, 255, 0.20);
+    --black-bk_100: #000;
+    --box1-border:rgba(39, 212, 255, 0.4);
+    --title-color:#{$ui_sky};
+    --select-color: #0A0F24;
+    --white-to-bk: #fff;
+    --etc-b_text: #338FFF;
+    --etc-bg: #04091A;
+    --tooltip_black: #050A1F;
+    --tooltip_blue: #{$ui_blue_more};
+    --tooltip_gray: #4F525E;
+    --bk-K_50: rgba(0, 0, 0, 0.50);
+}
+:root[data-theme=light] {
+    --bg_01: #F5F6FA;
+    --bg_02: #fff;
+    --bg_02_template: #DCDDE0;
+    --bg_01_40: #F3F5FD;
+    --bg_01_80: rgba(245, 246, 250, 0.90);
+    --bg_02_60: rgba(245, 247, 255, 0.90);
+    --bg-01-80-bar: rgba(245, 246, 250, 0.90);
+    --primary-pri_100: #{$ui_blue_more};
+    --primary-pri_80: #{$ui_blue_more80};
+    --primary-pri_60: #{$ui_blue_more60};
+    --primary-pri_50: #{$ui_blue_more50};
+    --primary-pri_40: #{$ui_blue_more40};
+    --primary-pri_30: #{$ui_blue_more30};
+    --primary-pri_20: #{$ui_blue_more20};
+    --primary-pri_12: #{$ui_blue_more12};
+    --primary-pri_12-to-bk: #{$bg_black100};
+    --primary-pri_06: #{$ui_blue_more06};
+    --primary-pri_00: #{$ui_blue_more00};
+    --white-w_100: #{$fc_white};
+    --white-w_100-sec: #{$bg_black100};
+    --white-w_87: #{$bg_black100};
+    --white-w_87-sec: #{$bg_black100};
+    --white-w_60: #{$bg_black60};
+    --white-bk_50: #{$bg_grey50};
+    --white-w_40: #{$bg_black40};
+    --white-w_40-sec: #{$bg_grey40};
+    --white-w_30: #{$bg_black30};
+    --white-w_30-sec: #{$bg_grey30};
+    --white-w_20: #{$bg_black20};
+    --white-w_16: #{$bg_black16};
+    --white-w_12: #{$bg_black12};
+    --white-w_00: #{$bg_black00};
+    --tab-btn_default: #{$ui_blue};
+    --btn-btn_default: #{$ui_blue_hover};
+    --btn-btn_hover: #{$ui_blue_more};
+    --btn-btn_selected: #{$fc_normal};
+    --more-visible-wh_16-to-6: #{$bg_black16};
+    --more-visible-wh_12-to-6: #{$bg_black06};
+    --more-visible-wh_6-to-100: #fff;
+    --more-visible-wh_60-to-100: #{$bg_black100};
+    --more-visible-wh_6-to-60: #{$bg_grey60};
+    --more-visible-wh_6-to-bk: #{$bg_black100};
+    --primary-to-grayscale-to-bk :#000;
+    --primary-to-grayscale-to-wh: #fff;
+    --more-bright-wh_12-to-6: #{$bg_black06};
+    --more-bright-wh_20-to-12: #{$bg_black12};
+    --more-bright-wh_6-to-60 : #{$bg_grey60};
+    --etc-popup_tit: #{$ui_blue_more80};
+    --white-w_6: #{$bg_black06};
+    --background-blur-0120: rgba(162, 164, 184, 0.20);
+    --blur_02_60: #{$bg_grey90};
+    --bg-blur_02_60: rgba(55, 61, 82, 0.60);
+    --grade-chart-gco-01: #FC5C34;
+    --line-pri_20-to-wh-100: #fff;
+    --line-wh_12-to-40: #{$bg_grey40};
+    --line-wh_12-to-100: #{$fc_white};
+    --line-pri_40-to-bk_40: #{$bg_black40};
+    --line-pri_40-to-wh_40:#{$bg_grey40};
+    --line-pri_40-to-wh_100:#fff;
+    --icon-pri_20-to-100 : #0067E6;    
+    --line-wh_30-to-6: #fff;
+    --line-wh_20-to-100: #fff;
+    --black-bk_100: #fff;
+    --box1-border:#fff;
+    --title-color: #{$ui_blue_more};
+    --select-color: #fff;
+    --white-to-bk: #000;
+    --etc-b_text: #0068E6;
+    --etc-bg: #{$fc_white};
+    --bk-K_50: rgba(0, 0, 0, 0.50);
+}
+
+
+/* html data-theme */
+html[data-theme=light] {
+
+    .img_dark{display: none;}
+    .img_light{display: block;}
+
+    .sub_header{
+        background: rgba(255, 255, 255, 0.60);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    .sp_logo_uniplus{
+        background: url('../images/logo_uniplus_light.svg') no-repeat left center;
+        background-size: cover;
+    }
+    .gnb{
+        ul li a{
+            &.on,&:hover,&:focus{
+                color: var(--primary-pri_100);
+            }
+        }
+    }
+    .guide_top h1{color: #000;}
+
+    //img filter
+    button{
+        &.lgmode{
+            img{filter: invert(0%) sepia(91%) saturate(7463%) hue-rotate(15deg) brightness(0%) contrast(108%);}
+            .img_on{filter: invert(43%) sepia(95%) saturate(6415%) hue-rotate(204deg) brightness(96%) contrast(101%);}
+        }
+    }
+    .btn_srch28{
+        span img:not(.on){@include filter_black}
+        &.mode{
+            &:active{
+                img{filter: none;}
+            }
+        }
+        &:active:not(.selected) {
+            span img:not(.on){@include filter_white}
+        }
+    }
+    .btn_srch28.on{
+        span img {@include filter_white}
+    }
+    .put_delete, .put_check{
+        img{@include filter_black;}
+    }
+    .arrow img{@include filter_black;}
+    .icon_download{@include filter_black;}
+    .indi_tabs .btn_floating {box-shadow: none}
+    .btn_floating{
+        .put_drop img{@include filter_black;}
+        .put_see img{@include filter_blue;}
+        .put_see .img_seeoff {@include filter_white;}
+        .put_see .img_see{
+            @include filter_blue;
+        }
+        &:hover:not(.disabled),&.hover,&.selected {
+            .put_drop img {@include filter_white}
+            .put_see img {@include filter_white}
+        }
+        box-shadow: 0.25rem 0.25rem 1rem 0 rgba(4, 9, 26, 0.16);
+        &.hover, &.selected, &:hover {
+            box-shadow: 0.25rem 0.25rem 1rem 0 rgba(4, 9, 26, 0.16), 0 0 0.75rem 0 rgba(39, 212, 255, 0.50) inset;
+        }
+    }
+    .btn_drop {
+        .put_drop .img_drop {@include filter_black}
+        .put_see img {@include filter_black}
+        &.hover, &.selected{
+            p {
+                img {@include filter_white}
+            }
+            img {@include filter_blue}
+        }
+        .put_see.off{
+            .img_see {@include filter_black}
+            .img_see_off {@include filter_blue} 
+        }
+    }
+
+    //layout
+    .back{
+        background-color: #fff;
+    }
+    .board{
+        &.main{
+            background: url(../images/bg_map_main_light.png) no-repeat center bottom;
+            background-size: cover;
+        }
+        &.error{
+           background: url(../images/bg_map_error_light.png) no-repeat center bottom;
+           background-size: cover;
+        }
+    }
+    .arr_up img{@include filter_blue;}
+    .indi_top{
+        &.accord,&.primary_tobk{
+            .arr_up img{@include filter_black;}
+        }
+    }
+    .btn_arrow_circle{
+        img {@include filter_black}
+        &.selected, &:hover:not(.disabled){
+            img {@include filter_black}
+        }
+        // &.disabled{
+        //     img {@include filter_white}
+        // }
+    }
+    .btn_arrow_circle.line {
+        img {@include filter_black}
+        &.selected,&:hover:not(.disabled){
+            img {@include filter_blue}
+        }
+    }
+    .btn_arrow_l{
+        img{@include filter_blue;}
+        &.disabled{
+            img{
+                opacity: 0.3;
+                @include filter_black01;
+            }
+        }
+    }
+    .btn_arrow{
+        img {@include filter_black01}
+        &.hover, &:hover{
+            img {@include filter_blue}
+        }
+        &.disabled{
+            img{
+                opacity: 0.3;
+                @include filter_black01;
+            }
+        }
+    }
+    .btn_arrow_s {
+        img {@include filter_black01;
+            opacity: 0.6;
+        }
+    }
+    .arrow_box {
+        img {@include filter_black;}
+    }
+    .btn_secondary {
+        img {
+            @include filter_black;
+            opacity: 0.6;
+        }
+    }
+    .btn_primary.disabled {
+        img {
+            @include filter_black;
+            opacity: 0.6;
+        }
+    }
+    .btn_toggle_icon {
+        .circle_grey28.icon {
+            .img {@include filter_black}
+            .img_on {@include filter_white}
+        }
+        .circle_grey32.line {
+            .img {@include filter_black}
+            .img_on {@include filter_white}
+        }
+        &.selected {
+            .img {@include filter_black}
+            .img_on {@include filter_white}
+        }
+    }
+    .circle_grey32, .circle_grey28{
+        &.popover .img_on {
+            filter:none;
+        }
+    }
+    .btn_file, .preview_box {
+        img{@include filter_black}
+    }
+    .circle32.icon {
+        img{@include filter_black}
+    }
+    .icon_ffb, .btn_icon {
+        img {@include filter_black}
+        &.selected, &:hover, &:active {
+            img {@include filter_blue}
+        }
+    }
+    .arr_up, .arr_right {
+        img {@include filter_black}
+    }
+    // .diagon_cont{
+    //     &.sm{
+    //         background: url(../images/bg_tract_sm_light.svg) no-repeat left top;
+    //         background-size: 100% 100%;
+    //     }
+    // }
+    .bd_title{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 19.27%, #FFF 50.52%, rgba(255, 255, 255, 0.50) 80.73%, rgba(255, 255, 255, 0.00) 100%);
+    }
+    .bd_title{
+        .tp_line{
+            background: linear-gradient(89.94deg, rgba(0, 104, 230, 0) 0.05%, #0068E6 51.56%, rgba(0, 104, 230, 0) 99.95%);
+        }
+    }
+    .infowindow_box{
+        background: #F3F5FD;
+        box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 18, 41, 0.16);
+    }
+    .label_tag{
+        &.grade_color02{color: #fff;}
+        &.bg_grey{background-color: $bg_black20;}
+    }
+    // .board_line{
+    //     .btn_arrow_l{border: 1px solid #fff;}
+    // }
+    .scroll::-webkit-scrollbar-thumb,.textarea::-webkit-scrollbar-thumb {
+        background-color: var(--white-w_40);
+    }
+    .indi_etc{box-shadow: 0px 4px 12px 0px rgba(0, 18, 41, 0.24);}
+    .dash_box{background-color: #fff;}
+    .record_back{background-color: #E1E2E5;}
+    .record_top{border: none;}
+    .record_contain{
+        box-shadow: 0px 4px 12px 0px rgba(0, 18, 41, 0.16);
+    }
+    
+    .accordion_block {
+        div{
+            button{
+                img{@include filter_black;}
+            }
+        }
+    }
+    .accordion_block {
+        &.accord_select {
+            .accordion_title {
+                &.on, &.hover, &:hover, &:focus, &.selected {                
+                    img {@include filter_blue}
+                }
+            }
+        }
+        &.select{
+            .accordion_title{
+                button{
+                    img {@include filter_black;}
+                }
+                &.on, &.hover, &:hover, &:focus {                
+                    img {@include filter_black;}
+                }
+            }
+        }
+    }
+    .btn_pagination{
+        img {@include filter_black}
+    }
+    .accordion_title {
+        div{
+            img{@include filter_black;}
+        }
+    }
+    .toggle {
+        img{@include filter_black;}
+        &.on{
+            img{
+                filter: brightness(0) saturate(100%) invert(25%) sepia(93%) saturate(1829%) hue-rotate(200deg) brightness(98%) contrast(107%);
+            }
+        }
+    }
+    .popover_close{
+        img{@include filter_black;}
+    }
+    .tree_button {
+        button {
+            img {@include filter_blue}
+        }
+    }
+    .tod{
+        img{@include filter_black;}
+    }
+    .selector{
+        background-image: url('../images/arrow_down_bk_16.svg');
+    }
+    .bg_track{
+        &.track01{
+            background: url('../images/bg_map_light1.png') no-repeat center center;
+            background-size: cover;
+        }
+    }
+    .users_wrap{
+        background: #E1E2E5;
+    }
+    .selectbox_arrow{@include filter_black;}
+    .photo_circle{
+        background: #e0e0e0;
+        img{
+            &.img_prof{
+                // @include filter_black;
+                filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(81%) hue-rotate(147deg) brightness(86%) contrast(85%);
+            }
+        }
+    }
+    .tree_button.check{
+        button{
+            img {@include filter_blue}
+        }
+    }    
+    .tree_button.check{
+        button{
+            img {@include filter_blue}
+        }
+    }
+    .btn_notification{
+        img {@include filter_blue}
+    }
+    .profile_box {
+        @include filter_black
+    }
+    .datepicker{
+        background-image: url(../images/calendar_fff_24_light.svg);
+        &.on{background-image: url(../images/calendar_sky_24_light.svg) }
+    }
+    .react-datepicker__navigation-icon--next::before{
+        background:url('../images/arrow_right_fill_fff_16_light.svg') center center;
+        background-size: 1rem auto;
+    }
+    .react-datepicker__navigation-icon--previous::before{
+        background:url('../images/arrow_left_fill_fff_16_light.svg') center center;
+        background-size: 1rem auto;
+    }
+    .checkbox_type{
+        input[type=checkbox]:checked + label {
+            &:after {   
+                background: url(../images/checkbox_checked_light.svg) 2px center no-repeat;
+                background-size: 0.625rem auto;
+            }
+        }
+        &.login {
+            input[type=checkbox]:checked + label {
+                &:after { 
+                    background:#0068E6 url(../images/chekcbox_login_chekced.svg) no-repeat center center;
+                    background-size: 0.625rem auto;
+                }
+            }
+        }
+        &.part {
+            align-self: center;
+            color: var(--white-w_100-sec);
+            input[type=checkbox]:checked + label {
+                &:after {
+                    background: url(../images/minus_sky_12.svg) center no-repeat;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .modal_bg{
+        background: linear-gradient(180deg, #E1E2E5 47.39%, rgba(225, 226, 229, 0.50) 100%);
+    }
+    .login_back{
+        background: url(../images/bg_map_error_light.png) no-repeat center bottom;
+        background: url(../images/bg_login_light.png) no-repeat center bottom;
+        background-size: cover;
+    }
+    .layout_box:after{content: none;}
+    .card_box{
+        &.dark{background: var(--white-w_6);}
+    }
+    .diagon_cont {
+        filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(2905%) hue-rotate(204deg) brightness(96%) contrast(101%);
+    }
+    .ic_artff{
+        background: url('../images/arr_traff_light_16.svg') no-repeat center center;
+    }
+    .pg_prev, .pg_next {
+        @include filter_blue
+    }
+
+    .action_prev, .action_next {
+        @include filter_black
+    }
+    .stepper_arrow{
+        img{@include filter_black}
+    }
+    .play_circle{
+        img{
+           content: url("../images/play_circle_light_20.svg");
+        }
+    }
+    .play_btn, .playbar_current, .pagination_btn, .pg_prev {
+        img {@include filter_blue}
+    }
+    .pause_btn, .again_btn {
+        img {@include filter_black}
+    }
+    .selectbox_arrow, .selectbox, .selectboxSample  {
+        img {@include filter_black}
+    }
+    .bt_srch{
+        @include filter_black
+    }
+
+    // sp_icon
+    .sp_search24{
+        background: url('../images/search_fff_24_light.svg') no-repeat center center;
+        background-size: cover;
+    }
+    .sp_download20{
+        background: url('../images/icon_download_20_light.svg') no-repeat center center;
+        background-size: cover;
+    }
+    .sp_cctv20{
+        background: url('../images/icon_camera_20_light.svg') no-repeat center center;
+        background-size: cover;
+    }
+    .btn_toggle_icon{
+        &:hover, &:focus, &.selected{
+            .sp_cctv20{
+                background: url('../images/icon_camera_sky_20_light.svg') no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    .sp_x20{
+        background: url('../images/icon_x_20_light.svg') no-repeat center center;
+        background-size: cover;
+    }
+    .sp_layer24{
+        background: url('../images/layer_fff_24_light.svg') no-repeat center center;
+        background-size: cover;
+        opacity: 1 !important;
+    }
+    .icon_ffb{
+        &:hover, &.selected{
+            .sp_layer24{
+                background: url('../images/layer_sky_24_light.svg') no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    .mark_trig_down12 {
+        background: url('../images/triangle_down12_light.svg') no-repeat center center;
+        background-size: contain;
+    }
+    // map
+    .arrival_car {
+        img{
+            content: url("../images/marker_arrival_car_selected_100.svg");
+        }
+    }
+    .arrival_marker {
+        img{
+            content: url("../images/marker_arrival_area_selected.svg");
+        }
+    }
+    .map_frame{
+        img{
+            content: url("../images/map_frame_light.svg")
+        }  
+    }
+    // 3d map
+    .eastside, .westside, .southside, .northside{@include filter_blue;}
+    .mapcontrol_btn {@include filter_blue;}
+        
+    // polygon
+    .polygon{
+        &.black{
+            img{
+                content: url("../images/Polygon_black_light.svg");
+            }
+        }
+        &.blue{
+            img{
+                content: url("../images/Polygon_blue_light.svg");
+            }
+        }
+        &.purple{
+            img{
+                content: url("../images/Polygon_purple_light.svg");
+            }
+        }
+        &.green{
+            img{
+                content: url("../images/Polygon_green_light.svg");
+            }
+        }
+        &.yellow{
+            img{
+                content: url("../images/Polygon_yellow_light.svg");
+            }
+        }
+    }
+    .pass_road{
+        img{@include filter_blue}
+    }
+    .light_conceal {
+        visibility: hidden;
+    }
+    .marker.cctv {
+        .img_selected{
+            content: url("../images/cctv_light_selected_48.svg");
+        }
+    }
+    .marker.weather {
+        .img_selected{
+            content: url("../images/weather_center_light_selected_48.svg");
+        }
+    }
+    .marker.bus {
+        .img_selected{
+            content: url("../images/bus_light_selected_48.svg");
+        }
+    }
+    .marker.depart {
+        .img_selected{
+            content: url("../images/depart_light_selected_48.svg");
+        }
+    }
+    .marker.danger {
+        .img_selected{
+            content: url("../images/car_accident_light.svg");
+        }
+    }
+    .park_sign.danger.on {
+        width: 5.5625rem;
+        height: 2.875rem;
+        background: url("../images/park_danger_light_on.svg") no-repeat center center;
+        background-size: contain;
+    }
+    .put_check {
+        img {@include filter_black}
+    }
+    .time_mark20 {@include filter_black}
+    // table
+    .row_type2{
+        .tac{img{@include filter_black}}
+    }
+    // card pattern
+    .ic_artff{
+        background: url('../images/arr_traff_light_16.svg') no-repeat center center;
+    }
+    .pg_prev, .pg_next {
+        img{@include filter_blue}
+    }
+    .sign_tri2 {
+        &.jam {
+            background: url(../images/sign_jam_light_28.svg) no-repeat center center;
+            background-size: contain;
+        }
+        &.ambulace{
+            background: url(../images/ambulance_light.svg) no-repeat center center;
+            background-size: contain;
+        }
+    }
+    // input
+    .pos_rel.lightmode{
+        opacity: 0;
+    }
+    .popup_close{
+        img{@include filter_white}
+    }
+    // card
+    .circle_g32.pencil{
+        img {
+            filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(98%) contrast(100%);
+        }
+    }
+    // upload
+    .upload_btn{
+        img{filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(98%) contrast(100%);}
+    }
+    // template
+    
+    .main_contents {
+        width: 100%;
+        height: 100%;
+        background-size : cover;
+        background: url("../images/background_light_img.png") no-repeat center center;
+        &.ver2 {
+            background: url("../images/background_ver2.png") no-repeat center center;
+            background-size : cover;
+        }
+        &.ver3 {
+            background: url("../images/background_ver3.png") no-repeat center center;
+            background-size : cover;
+        }
+        &.ver4 {
+            background: url("../images/background_img.png") no-repeat center center;
+            background-size : cover;
+        }
+        &.login {
+            background: url("../images/login_background_light.png") no-repeat;
+        }
+        &.error {
+            background: url("../images/error_background_light.png") no-repeat center center;
+        }
+        &.error2 {
+            background-color: #ffffff;
+            background: url("../images/error2_background_light.svg") no-repeat center bottom;
+            background-size: contain;
+        }
+    }
+    .main_traffic {
+        background: url("../images/main_traffic_light.svg") no-repeat;
+    }
+    .signal_body {
+        background-image: url("../images/signal_body_light.png");
+    }
+    .img_off.marker {
+        content: url("../images/car_accident_light_56.svg");
+    }
+    .marker_img_selected {
+        content: url("../images/car_accident_selected_light_56.svg");
+    }
+
+    // 신호최적화
+    .arrow {
+        img {@include filter_black}
+    }
+    .arrow_right_2line {
+        img {@include filter_blue}
+    }
+    
+    // 상황관리이력
+    .chart_cont.record {filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(2905%) hue-rotate(204deg) brightness(96%) contrast(101%);}
+    
+    // login
+    .logo_login {
+        content: url("../images/login_logo_light.svg");
+    }
+    .legend_label {
+        border: 1px solid var(--line-wh_40-to-100, #FFF);
+        background: var(--bg_01, #F5F6FA);
+        box-shadow: 0px 4px 12px 0px rgba(4, 9, 26, 0.20);
+        color: $bg_black100;
+    }
+    .custom_overlay {
+        background-image: url(../images/info_window_graphic_light.svg);
+    }
+    .checkbox_type:not(.login) {
+        input[type=checkbox]:checked + label {
+            &:after {@include filter_blue}
+        }
+    }
+    .guide_wrap.navigation {
+        background: #E1E2E5;
+    }
+    .lnb_anchor__title img, .wh_to_dark {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%) hue-rotate(11deg) brightness(100%) contrast(101%);
+    }
+    .btn_fnb_search .img_on {
+        filter: brightness(0) saturate(100%) invert(25%) sepia(88%) saturate(2007%) hue-rotate(201deg) brightness(99%) contrast(107%);
+    }
+    .map_scale_box.type2 {
+        background: transparent;
+        img {
+            filter: brightness(0) saturate(100%) invert(64%) sepia(10%) saturate(0%) hue-rotate(179deg) brightness(93%) contrast(92%);
+        }
+    }
+    .footer_nav.type2 {
+        background: var(--bg_01_80);
+    }
+    .indicator {box-shadow: 0.25rem 0.25rem 1rem 0px rgba(4, 9, 26, 0.16);}
+    .indicator_shadow:after {background: $fc_white;}
+    .arr_top {
+        filter: brightness(0) saturate(100%) invert(56%) sepia(85%) saturate(7500%) hue-rotate(203deg) brightness(93%) contrast(103%);
+    }
+    .need_light{
+        @include filter_blue;
+    }
+    .logo_incheon{
+        @include filter_blue;
+    }
+    .top_logo{
+        @include filter_blue;
+    }
+    .board{
+        &.view{
+            background: url(../images/bg_map_main_light.png) no-repeat center bottom;
+            background-size: cover;
+        }
+    }
+    .check_text{
+        p{
+            img{
+                @include filter_black01;
+                &.accordion_down{
+                    @include filter_blue;
+                }
+            }
+            &.on img{
+                @include filter_blue;
+            }
+        }
+    }
+    .check_box{
+        .icon{@include filter_black;}
+        .icon_on{@include filter_blue;}
+    }
+    .img_camera_24{@include filter_black;}
+    .monitor_item{
+        @include filter_black;
+        &.on, &:hover{
+            @include filter_blue;
+        }
+    }
+    .login_system{
+        background: url(../images/bg_map_error_light.png) no-repeat center bottom;
+        background-size: cover;
+    }
+    .gis_setting_btn{
+        img{@include filter_black;}
+    }
+    .boards_back{
+        background: #E1E2E5;
+    }
+    .login_box{
+        background: rgba(245, 246, 250, 0.9);
+    }
+}
+// html data-theme End

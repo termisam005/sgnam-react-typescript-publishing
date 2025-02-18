@@ -8,7 +8,7 @@
 }
 .back {
     background-color: $bg_default;
-    color: $fc_default;
+    color: var(--white-w_87);
 	width: 100%;
 	height: 100%;
     overflow: hidden;
@@ -31,13 +31,14 @@
 .login_logo{
 	text-align: center;
 	margin: 0 0 1.25rem;
+    position: relative;
 }
 .logo_uniplus{
     width: 12.5625rem;
 }
 .login_box{
     background: rgba(162, 164, 184, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 0.063rem solid rgba(255, 255, 255, 0.12);
 	@include bg_blur30;
 	@include dflx_jbet;
 	width: 44.5rem;
@@ -53,7 +54,7 @@
 }
 .login_title{
 	@include fs_24_medium;
-    color:$fc_white;
+    color:var(--white-to-bk);
     line-height: 1.2;
 }
 .input_box{
@@ -74,6 +75,11 @@
 	label{
 		@include fs_13_regular;
 	}
+}
+.logo_absolute{
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
 }
 
 .wrap_rel{
@@ -116,7 +122,7 @@
 	column-gap: 1rem;
     width: 100%;
     height: 100%;
-    background-color: $bg_default;
+    //background-color: $bg_default;
 }
 .signal_body {
     width:100%;
@@ -223,14 +229,14 @@
 	padding: 0.25rem 0.25rem 0.1rem;
 	text-align: center;
 	background-color: transparent;
-	border: 0.0625rem solid $bg_grey40;
+	border: 0.0625rem solid var(--white-w_40);
 	border-radius: 0.125rem;
-	color: $bg_grey60;
+	color: var(--white-w_60);
 	@include fs_14_medium;
 	&.on{
 		opacity: 1;
-		color: $ui_sky;
-        border: 0.0625rem solid $ui_sky;
+		color: var(--primary-pri_100);
+        border: 0.0625rem solid var(--primary-pri_100);
 	}
 }
 .status_analysis{
@@ -282,7 +288,7 @@
         height: 100%;
         @include fs_13_medium;
         line-height: 1.4;
-        background: $bg_grey16;
+        background: var(--more-visible-wh_16-to-6);
         padding: 0.125rem 0.75rem;
 		span{
             @include txt_ellip;
@@ -297,10 +303,10 @@
         @include fs_13_medium;
 		padding: 0;
 		letter-spacing: -0.5px;
-        background: $bg_grey16;
+        background: var(--more-visible-wh_16-to-6);
         word-break: keep-all;
         &.top{
-            border-bottom: 0.0625rem solid $bg_grey12;
+            border-bottom: 0.0625rem solid var(--white-w_12);
         }
     }
     img{
@@ -325,7 +331,7 @@
     width: 100%;
 }
 .tod_dl {
-    color: $fc_default;
+    color: var(--white-w_87);
     text-align: center;
     padding: 0 0.25rem 0 0;
     dt {
@@ -484,7 +490,7 @@
     width: 100%;
     overflow: hidden;
     padding: 0.25rem;
-    background-color: $bg_grey06;
+    background-color: var(--white-w_6);
     border-radius: 0.125rem;
 }
 .smart_result{
@@ -606,7 +612,7 @@
     }
 }
 .paging_ul li a.on {
-	background: $bg_grey16;
+	background: var(--white-w_16);
 }
 .paging_ul li a:hover {
 	opacity: 0.6;
@@ -683,7 +689,7 @@
         @include txt_ellip;
         font-size: 1.375rem;
         font-weight: 700;
-        color: #27d4ff;
+        color:var(--title-color);
     }
     .tp_line {
         position: absolute;
@@ -713,7 +719,7 @@
     margin: 0 0 0.5rem;
     h5{
         @include fs_14_medium;
-        color: $fc_default;
+        color: var(--white-w_87);
     }
     .indi_unit{
         @include fs_11_light;
@@ -752,8 +758,8 @@ footer{
 
 /* Components pages layout */
 .guide_back {
-    background-color: $bg_guide;
-    color: $fc_default;
+    // background-color: $bg_guide;
+    // color: $fc_default;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -762,7 +768,8 @@ footer{
 	z-index: 0;
 }
 .guide_wrap{
-    background-color: $bg_guide;
+    background: var(--bg_02);
+    color: var(--white-w_87);
 	position: relative;
 	width: 100%;
 	min-height: 100%;
@@ -794,7 +801,7 @@ footer{
     width: 100%;
     height: 4.75rem;
     padding: 0 0 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0.063rem solid var(--white-w_30);
     h1{
         @include fs_40_bold;
     }
@@ -834,7 +841,7 @@ footer{
 }
 .comp_size{
     @include fs_12_regular;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--white-w_87);
     width: 2.5rem;
     text-align: center;
 }
@@ -851,7 +858,7 @@ footer{
         background: transparent;
         height: 1.75rem;
         padding: 0.25rem 0.75rem;
-        border:0.0625rem solid rgba(255, 255, 255, 0.4);
+        border: 0.063rem solid var(--white-w_40);
         border-radius: 0.25rem;
         letter-spacing: 0;
         @include fs_13_regular;
@@ -966,14 +973,14 @@ footer{
 		h3{
 			@include fs_24_bold;
 			letter-spacing: 0.5px;
-            color: #fff;
+            color: var(--white-to-bk);
 		}
 		ul{
 			margin:1.5625rem 0 0;
 			.txt{
 				@include fs_16_regular;
 				line-height: 1.4;
-                color: $fc_default;
+                color: var(--white-w_87);
 			}
 		}
 	}
@@ -1137,7 +1144,7 @@ footer{
 }
 .react-datepicker__input-container input{
     background: transparent;
-    color: $fc_default;
+    color: var(--white-w_87);
     font-size: 0.8125rem;
     width: 100%;
     letter-spacing: 0.5px;
@@ -1148,32 +1155,32 @@ footer{
 }
 .react-datepicker__day{
     border-radius: 0 !important;
-    color: $bg_grey60 !important;
+    color: var(--white-w_60);
     font-size: 0.8125rem;
     line-height: 1.6rem !important;
     &:hover{
-        background-color: $ui_sky !important;
-        color: #0A0F24 !important;
+        background-color: var(--primary-pri_100) !important;
+        color: var(--select-color) !important;
         border-radius: 0.125rem !important;
     }
 }
 .react-datepicker__day--outside-month{
-    color: $bg_grey20 !important;
+    color: var(--white-w_20);
 }
 .react-datepicker__day--selected{
-    background-color: $ui_sky !important;
-    color: #0A0F24 !important;
+    background-color: var(--primary-pri_100) !important;
+    color: var(--select-color) !important;
     font-weight: 400 !important;
 }
 .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range{
     background-color: transparent !important;
 }
 .react-datepicker__day--in-range{
-    background: rgba(39, 212, 255, 0.1) !important;
+    background: var(--primary-pri_12) !important;
 }
 .react-datepicker__current-month{
     margin:0.25rem 0 1rem !important;
-    color: $bg_grey60 !important;
+    color: var(--white-w_60) !important;
     font-size:0.875rem !important;
 }
 .react-datepicker__navigation-icon::before{
@@ -1200,11 +1207,11 @@ footer{
     border-top-color: #182566 !important;
 }
 .react-datepicker{
-    background-color: rgba(10, 15, 36, 0.8) !important;
+    background-color: var(--bg_01_80) !important;
     min-width: 13.625rem;
     width: auto;
     padding: 1.25rem;
-    border: 0.0625rem solid  $ui_sky40 !important;
+    border: 0.0625rem solid  var(--line-pri_40-to-bk_40) !important;
     border-radius: 0.125rem;
 }
 .react-datepicker__header{
@@ -1218,13 +1225,14 @@ footer{
 .react-datepicker__day-name{
     font-size: 0.8125rem;
     font-weight: 400;
-    color: $bg_grey60 !important;
+    color: var(--white-w_60) !important;
 }
 .react-datepicker__day--keyboard-selected{
-    background-color: $ui_sky !important;
-    border-radius: 0.125rem !important;
-    color: #0A0F24 !important;
-    font-weight: 400 !important;
+    background-color: var(--primary-pri_100);
+    border-radius: 0.125rem;
+    color: #0A0B14;
+    color: var(--select-color);
+    font-weight: 400;
 }
 .react-datepicker__navigation{
     width: 2.5rem !important;

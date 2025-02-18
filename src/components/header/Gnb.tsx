@@ -1,4 +1,5 @@
 import GnbComponent from '../common/GnbComponent';
+import DarkLightComponent from '../mode/DarkLightComponent';
 
 
 const Gnb = () => {
@@ -13,6 +14,9 @@ const Gnb = () => {
                 <GnbComponent title={'Error'} path={'/exerror'} />
                 <GnbComponent title={'Login'} path={'/exlogin'} />
                 <GnbComponent title={'Components'} path={'/accordionlist'} />
+                <li>
+                    <DarkLightComponent />
+                </li>
             </ul>
         </nav>
     );

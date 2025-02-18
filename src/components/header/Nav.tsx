@@ -1,4 +1,5 @@
 import GnbComponent from '../common/GnbComponent';
+import DarkLightComponent from '../mode/DarkLightComponent';
 
 
 const Nav = () => {
@@ -12,6 +13,9 @@ const Nav = () => {
                 <GnbComponent title={'주차통합'} path={'/parkinteg'} />
                 <GnbComponent title={'디지털트윈'} path={'/digaitaltwin'} />
                 <GnbComponent title={'통계분석'} path={'/statisticalAnalysisMain'} />
+                <li>
+                    <DarkLightComponent />
+                </li>
             </ul>
         </nav>
     );

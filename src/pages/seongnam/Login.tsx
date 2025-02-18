@@ -6,6 +6,7 @@ import ButtonComponent from '../../components/common/ButtonComponent';
 import CheckComponent from '../../components/common/CheckComponent';
 import InputZoneComponent from '../../components/input/InputZoneComponent';
 import InputPassComponent from '../../components/input/InputPassComponent';
+import DarkLightComponent from '../../components/mode/DarkLightComponent';
 
 
 const Login = () => {
@@ -49,6 +50,9 @@ const Login = () => {
             <h1>
               <ImgComponent className={'logo_seongnam'} src={"logo_seongnam_big.svg"} />
             </h1>
+            <div className='logo_absolute'>
+                <DarkLightComponent />
+            </div>
           </div>
           <div className='login_box'>
             <section className='login_left'>

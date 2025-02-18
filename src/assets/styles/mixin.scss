@@ -9,7 +9,9 @@ $ui_blue_more30:rgba($color:$ui_blue_more, $alpha: 0.3);
 $ui_blue_more20:rgba($color:$ui_blue_more, $alpha: 0.2);
 $ui_blue_more12:rgba($color:$ui_blue_more, $alpha: 0.12);
 $ui_blue_more06:rgba($color:$ui_blue_more, $alpha: 0.06);
+$ui_blue_more00:rgba($color:$ui_blue_more, $alpha: 0);
 $ui_sky: rgb(39, 212, 255);
+$ui_sky80: rgba($color:$ui_sky, $alpha: 0.8);
 $ui_sky60: rgba($color:$ui_sky, $alpha: 0.6);
 $ui_sky50: rgba($color:$ui_sky, $alpha: 0.5);
 $ui_sky40: rgba($color:$ui_sky, $alpha: 0.4);
@@ -17,6 +19,7 @@ $ui_sky30: rgba($color:$ui_sky, $alpha: 0.3);
 $ui_sky20: rgba($color:$ui_sky, $alpha: 0.2);
 $ui_sky12: rgba($color:$ui_sky, $alpha: 0.12);
 $ui_sky06: rgba($color:$ui_sky, $alpha: 0.06);
+$ui_sky00: rgba($color:$ui_sky, $alpha: 0.0);
 $fc_normal: #338FFF;
 $fc_purple: #937EFF;
 $fc_green: #16D9AB;
@@ -44,6 +47,7 @@ $bg_black16: rgba(0, 0, 0, 0.16);
 $bg_black12: rgba(0, 0, 0, 0.12);
 $bg_black10: rgba(0, 0, 0, 0.1);
 $bg_black06: rgba(0, 0, 0, 0.06);
+$bg_black00: rgba(0, 0, 0, 0.0);
 $bg_greye0: #DCDDE0;
 $bg_greyf5: #F0F1F5;
 $bg_grey100: rgba(255, 255, 255, 1);
@@ -283,57 +287,79 @@ $fc_default:rgba(255, 255, 255, 0.87);
 }
 @mixin button_primary {
     @include button_options;
-    background: $ui_blue;
+    background: var(--btn-btn_default);
     box-shadow: 0px 0px 12px 0px #0476FF inset;
-    color: #fff;
+    color: var(--white-w_100);
     &:hover, &.selected, &.hover {
-        background: $ui_blue_hover;
-        box-shadow: 0px 0px 12px 0px rgba(39, 212, 255, 0.50) inset;
+        background: var(--btn-btn_hover);
+        box-shadow: 0 0 0.75rem 0 rgba(39, 212, 255, 0.50) inset;
     }
     &.disabled {
-        background: $bg_grey12;
+        background: var(--white-w_12);
         box-shadow: inset 0 0 0.75rem rgba(255, 255, 255, 0.1);
-        color: $bg_grey20;
+        color: var(--white-w_20);
+    }
+    &.table_srch{
+        background: var(--white-w_12);
+        box-shadow: 0 0 0.75rem 0 rgba(255, 255, 255, 0.10) inset;
+        color: $bg_grey40;
+    }
+    &.editor {
+        box-shadow: inset 0 0 0.625rem transparent;
+        background: var(--white-w_12);
+        color: var(--white-w_87);
+        &:hover:not(.selected):not(.disabled), &.selected, &.hover {
+            border-radius: 0.125rem;
+            border: 0.063rem solid #0068E6;
+        }
     }
 }
 @mixin button_secondary {
     @include button_options;
-    background: rgba(255, 255, 255, 0.12);
-    color: $fc_default;
+    background: var(--white-w_12);
+    color: var(--white-w_87);
     &:hover,&.hover {
-        background: $bg_grey16;
+        background: var(--white-w_16);
     }
-    &.selected {
-        background: $ui_blue_more;
-        color: $fc_white;
+    &.selected, &:active {
+        background: var(--btn-btn_selected);
+        color: var(--white-w_100);
     }
     &.disabled {
-        background: $bg_grey12;
-        color: $bg_grey20;
+        background: var(--white-w_12);
+        color: var(--white-w_40);
     }
 }
 @mixin button_floating {
     @include button_options;
     @include backFilter;
-    background:rgba(10, 15, 36, 0.80);
-    border: 0.0625rem solid $ui_sky40;
-    box-shadow: 0.25rem 0.25rem 1rem 0px rgba(4, 9, 26, 0.16);
-    color: $fc_default;
-    &:hover,&.hover {
-        background: $ui_blue_hover;
+    @include box_shadow16;
+    background: var(--bg_01_80);
+    border: 0.063rem solid var(--line-pri_40-to-wh_40);
+    color: var(--white-w_100-sec);
+    &:hover:not(.selected):not(.card_selected):not(.hover):not(.disabled), &.hover {
+        background: var(--btn-btn_hover);
+        border: none;
         box-shadow: inset 0 0 0.75rem rgba(39, 212, 255, 0.5);
-        color: $fc_white;
+        color: var(--white-w_100);
     }
     &.selected{
-        background: $ui_blue;
+        background: var(--btn-btn_default);
+        border: none;
         box-shadow: inset 0 0 0.75rem #0476FF;
-        color: $fc_white;
+        color: var(--white-w_100);
+    }
+    &.card_selected{
+        background: var(--tab-btn_default);
+        border: none;
+        box-shadow: inset 0 0 0.75rem #0476FF;
+        color: var(--white-w_100);
     }
     &.disabled {
-        background: rgba(10, 11, 20, 0.40);
+        background: var(--bg_01_80);
+        border: 0.063rem solid var(--line-wh_12-to-100);
         box-shadow: none;
-        border: 0.0625rem solid $bg_grey12;
-        color: $bg_grey20;
+        color: var(--white-w_20);
         img{
             opacity: 0.4;
             filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(306deg) brightness(104%) contrast(101%);
@@ -346,6 +372,27 @@ $fc_default:rgba(255, 255, 255, 0.87);
     }
     &.shadow_btn{
         box-shadow: 0.25rem 0.25rem 1rem 0 rgba(4, 9, 26, 0.16);
+    }
+}
+@mixin button_floating_footer {
+    @include button_options;
+    @include backFilter;
+    @include box_shadow16;
+    @include fs_14_medium;
+    background: var(--bg-01-80-bar);
+    border: 0.063rem solid var(--line-wh_12-to-40);
+    color: var(--white-w_100-sec);
+    &.hover, &:hover:not(.selected):not(.disabled) {
+        background: var(--primary-pri_12);
+    }
+    &.selected {
+        background:var(--primary-pri_20);
+        color:var(--primary-pri_100);
+        font-weight: 700;
+    }
+    &.disabled {
+        background: var(--bg-01-80-bar);
+        color: var(--white-w_20);
     }
 }
 @mixin button_floating_footer {
@@ -372,22 +419,23 @@ $fc_default:rgba(255, 255, 255, 0.87);
 @mixin button_ffb {
     @include button_options;
     @include backFilter;
-    background: rgba(10, 11, 20, 0.40);
-    border: 1px solid $bg_grey20;
-    color: $fc_default;
+    background: var(--bg_01_80);
+    border: 0.063rem solid var(--line-wh_12-to-40);
+    color: var(--white-w_87);
     &:hover:not(.selected):not(.disabled),&.hover{
-        background: $ui_sky12;
-        border: 0.0625rem solid $bg_grey12;
+        background: var(--primary-pri_12);
+        color: var(--primary-pri_100);
+        border: 0.063rem solid var(--line-wh_12-to-40);
     }
     &.selected{
-        background: $ui_sky20;
-        border: 0.0625rem solid $bg_grey12;
-        color: $ui_sky;
+        background: var(--primary-pri_20);
+        border: 0.063rem solid var(--line-wh_12-to-40);
+        color: var(--primary-pri_100);
     }
     &.disabled {
-        background: rgba(10, 11, 20, 0.40);
-        border: 0.0625rem solid $bg_grey12;
-        color:  $bg_grey20;
+        background: var(--bg_01_40);
+        border: 0.063rem solid var(--white-w_12);
+        color: var(--white-w_20);
     }
 }
 @mixin button_ghost {
@@ -546,9 +594,8 @@ $fc_default:rgba(255, 255, 255, 0.87);
 //box
 @mixin box1 {
     width: 100%;
-    background: rgba(10, 15, 36, 0.80);
-    background: rgba(11, 17, 41, 0.80);
-    border: 0.0625rem solid rgba(39, 212, 255, 0.4);
+    background: var(--bg_01_80);
+    border: 0.0625rem solid var(--box1-border);
     backdrop-filter: blur(1.875rem);
 }
 
@@ -593,8 +640,8 @@ $fc_default:rgba(255, 255, 255, 0.87);
     justify-content: center;
     overflow: hidden;
     padding:0.125rem;
-    background: rgba(255, 255, 255, 0.06);
-    border-right: 0.0625rem solid $bg_grey12;
+    background: var(--more-visible-wh_6-to-100);
+    border-right: 0.0625rem solid var(--white-w_12);
     line-height: 1;
     text-align: center;
 }
@@ -678,4 +725,13 @@ $fc_default:rgba(255, 255, 255, 0.87);
 }
 @mixin filter_white{
     filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(0%) hue-rotate(72deg) brightness(103%) contrast(102%);
+}
+
+@mixin table_pre{    
+    th, td {
+        min-width: 3.25rem;
+        text-align: center;
+        white-space: pre;
+    }
+    th:first-child {width: 3.25rem;}
 }

@@ -84,10 +84,15 @@
     }
 }
 .weath_dl{
+    dt {
+        @include fs_12_regular;
+        color: var(--white-w_87);
+        padding: 0 0.625rem 0 0;
+    }
     dd{
         @include dflx_ae;
         column-gap: 0.125rem;
-        color: $fc_default;
+        color: var(--white-w_87-sec);
     }
 }
 .member_naming{
@@ -489,13 +494,13 @@
     column-gap: 1rem;
     background: rgba(255, 255, 255, 0.06);
 }
-.checkbox_type{
-    &.default{
-        label{
-            color: rgba(255, 255, 255, 0.87);
-        }
-    }
-}
+// .checkbox_type{
+//     &.default{
+//         label{
+//             color: rgba(255, 255, 255, 0.87);
+//         }
+//     }
+// }
 .table_route{
     tbody{
         td{
