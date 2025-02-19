@@ -774,8 +774,16 @@ html[data-theme=light] {
     
     // 상황관리이력
     .chart_cont.record {filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(2905%) hue-rotate(204deg) brightness(96%) contrast(101%);}
+
+    .board.situation {
+        background: url(../images/bg_map_main_light.png) no-repeat center bottom;
+        background-size: cover;
+    }
     
     // login
+    .login_dark{
+        background: rgba(0, 0, 0, 0.2);
+    }
     .logo_login {
         content: url("../images/login_logo_light.svg");
     }
@@ -866,7 +874,29 @@ html[data-theme=light] {
         background: #E1E2E5;
     }
     .login_box{
-        background: rgba(245, 246, 250, 0.9);
+        background: rgba(245, 246, 250, 0.7);
+    }
+    .swiper_mini{
+        .swiper-button-prev{
+            &::after{
+                @include filter_black;
+            }
+        }
+        .swiper-button-next{
+            &::after{
+                @include filter_black;
+            }
+        }
+    }
+    .con_vertical_in{
+        background-color: transparent;
+    }
+    .polygon_item{
+        backdrop-filter: none;
+        filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(2905%) hue-rotate(204deg) brightness(96%) contrast(101%);
+    }
+    .mark_txt{
+        background: rgba(4, 9, 26, 0.1);
     }
 }
 // html data-theme End
