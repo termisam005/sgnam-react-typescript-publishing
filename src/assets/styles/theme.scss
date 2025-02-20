@@ -157,7 +157,7 @@ html[data-theme=light] {
 
     .sub_header{
         background: rgba(255, 255, 255, 0.60);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        border-bottom: 0.063rem solid rgba(0, 0, 0, 0.12);
     }
     .sp_logo_uniplus{
         background: url('../images/logo_uniplus_light.svg') no-repeat left center;
@@ -371,7 +371,10 @@ html[data-theme=light] {
     .indi_etc{box-shadow: 0px 4px 12px 0px rgba(0, 18, 41, 0.24);}
     .dash_box{background-color: #fff;}
     .record_back{background-color: #E1E2E5;}
-    .record_top{border: none;}
+    .record_top, .header_search{
+        background: rgba(255, 255, 255, 0.6);
+        border-bottom: 0.063rem solid rgba(0, 0, 0, 0.12);
+    }
     .record_contain{
         box-shadow: 0px 4px 12px 0px rgba(0, 18, 41, 0.16);
     }
@@ -418,8 +421,10 @@ html[data-theme=light] {
             }
         }
     }
-    .popover_close{
-        img{@include filter_black;}
+    .placement {
+        .popover_close{
+            img{@include filter_black;}
+        }
     }
     .tree_button {
         button {
@@ -896,7 +901,13 @@ html[data-theme=light] {
         filter: brightness(0) saturate(100%) invert(23%) sepia(99%) saturate(2905%) hue-rotate(204deg) brightness(96%) contrast(101%);
     }
     .mark_txt{
-        background: rgba(4, 9, 26, 0.1);
+        background:#fff;
+    }
+    .img_filter{
+        @include filter_black;
+    }
+    .diagon_statistics{
+        @include filter_blue;
     }
 }
 // html data-theme End

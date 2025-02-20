@@ -36,7 +36,7 @@ const StatisticalAnalysis = () => {
                         </div>
                         <div className="header_search">
                             <div className="dflx_ac col_gap16">
-                                <ImgComponent src={'filter_shape_16px.svg'} />
+                                <ImgComponent className='img_filter' src={'filter_shape_16px.svg'} />
                                 <p className='fs_13'>날짜</p>
                                 <DatepickerLine />
                             </div>
