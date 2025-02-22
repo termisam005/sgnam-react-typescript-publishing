@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71.639" height="39.642" viewBox="0 0 71.639 39.642">
+  <defs>
+    <filter id="pointer" x="35.312" y="0" width="19.772" height="21.741" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_179088" data-name="그룹 179088" transform="translate(-1627.5 -137.857)">
+    <g id="그룹_163637" data-name="그룹 163637" transform="translate(1628 141.431)">
+      <g id="그룹_163864" data-name="그룹 163864" transform="translate(0 0)">
+        <g id="그룹_163887" data-name="그룹 163887">
+          <path id="빼기_10" data-name="빼기 10" d="M8110.4,786.848h0a19.039,19.039,0,0,0-8.828-2.208V766.569a35.4,35.4,0,0,1,17.788,4.763l-8.958,15.515Z" transform="translate(-8066 -766.57)" fill="#ffbf00"/>
+          <path id="빼기_9" data-name="빼기 9" d="M8092.708,786.792h0l-8.926-15.459a35.389,35.389,0,0,1,17.788-4.763V784.64h-.069a19.044,19.044,0,0,0-8.791,2.152Z" transform="translate(-8066 -766.57)" fill="#fc8a18" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="빼기_7" data-name="빼기 7" d="M8098.559,784.568H8082a35.388,35.388,0,0,1,4.762-17.786l14.991,8.654a18.962,18.962,0,0,0-3.193,9.131Z" transform="translate(-8082 -749)" fill="#e60000" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="빼기_12" data-name="빼기 12" d="M8137.139,784.569h-16.7a18.967,18.967,0,0,0-3.154-9.075l15.09-8.713a35.4,35.4,0,0,1,4.762,17.786Z" transform="translate(-8066 -749)" fill="#1cbd6d"/>
+          <path id="빼기_8" data-name="빼기 8" d="M8096.991,788.245h0L8082,779.591a35.759,35.759,0,0,1,13.021-13.022l8.926,15.462a19.133,19.133,0,0,0-6.956,6.214Z" transform="translate(-8077.239 -761.808)" fill="#fc5634" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="빼기_11" data-name="빼기 11" d="M8117.288,788.3h0a19.14,19.14,0,0,0-6.89-6.216l8.958-15.516a35.735,35.735,0,0,1,13.021,13.021l-15.088,8.712Z" transform="translate(-8066 -761.808)" fill="#79d971"/>
+        </g>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1627.5, 137.86)" filter="url(#pointer)">
+      <path id="pointer-2" data-name="pointer" d="M4.433,0,8.866,12.16,4.433,9.12,0,12.16Z" transform="translate(47.28 15.1) rotate(-160)" fill="rgba(255,255,255,0.6)" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

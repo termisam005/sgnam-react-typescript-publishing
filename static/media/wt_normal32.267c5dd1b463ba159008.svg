@@ -1,0 +1,18 @@
+<svg id="air_quality_normal" data-name="air quality_normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.513" cy="0.324" r="0.542" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#58ffb2"/>
+      <stop offset="0.464" stop-color="#1cbd6d"/>
+      <stop offset="1" stop-color="#056334"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <path id="패스_91517" data-name="패스 91517" d="M19.923,19.219a.75.75,0,0,1,1.247.834c-.083.125-2.076,3.06-5.17,3.06s-5.087-2.935-5.17-3.06a.75.75,0,0,1,1.247-.834c.016.023,1.64,2.4,3.923,2.4s3.906-2.372,3.923-2.4m-9.378-5.492c0-.753.407-1.363.909-1.363s.909.61.909,1.363-.407,1.364-.909,1.364-.909-.61-.909-1.364m9.091,0c0-.753.407-1.363.909-1.363s.909.61.909,1.363-.407,1.364-.909,1.364-.909-.61-.909-1.364M6,16A10,10,0,1,0,16,6,10,10,0,0,0,6,16" fill="url(#radial-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_175400" data-name="그룹 175400">
+    <g id="그룹_175399" data-name="그룹 175399" clip-path="url(#clip-path)">
+      <rect id="사각형_40031" data-name="사각형 40031" width="27.45" height="27.45" transform="matrix(0.516, -0.857, 0.857, 0.516, -2.838, 20.678)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+  <rect id="사각형_40038" data-name="사각형 40038" width="32" height="32" fill="none"/>
+</svg>
