@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sgnam-react-typescript-publishing/static/css/main.79bd5a05.css",
-    "main.js": "/sgnam-react-typescript-publishing/static/js/main.660eb039.js",
+    "main.js": "/sgnam-react-typescript-publishing/static/js/main.dfb53ffa.js",
     "static/media/background_ver3.png": "/sgnam-react-typescript-publishing/static/media/background_ver3.4b1f20e72689f9a5276e.png",
     "static/media/bg_map_test02.png": "/sgnam-react-typescript-publishing/static/media/bg_map_test02.4b1f20e72689f9a5276e.png",
     "static/media/bg_login_seongnam.png": "/sgnam-react-typescript-publishing/static/media/bg_login_seongnam.de5b91d173f07da7f080.png",
@@ -503,10 +503,10 @@
     "static/media/lay_do_not_line.svg": "/sgnam-react-typescript-publishing/static/media/lay_do_not_line.7bd2bd78dd6bbd28a7ba.svg",
     "static/media/bg_tract_top.svg": "/sgnam-react-typescript-publishing/static/media/bg_tract_top.f62ca73faca499fd2fe8.svg",
     "main.79bd5a05.css.map": "/sgnam-react-typescript-publishing/static/css/main.79bd5a05.css.map",
-    "main.660eb039.js.map": "/sgnam-react-typescript-publishing/static/js/main.660eb039.js.map"
+    "main.dfb53ffa.js.map": "/sgnam-react-typescript-publishing/static/js/main.dfb53ffa.js.map"
   },
   "entrypoints": [
     "static/css/main.79bd5a05.css",
-    "static/js/main.660eb039.js"
+    "static/js/main.dfb53ffa.js"
   ]
 }
